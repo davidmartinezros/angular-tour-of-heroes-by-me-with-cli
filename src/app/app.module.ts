@@ -13,13 +13,17 @@ import { HeroService } from './hero.service';
 // Imports for loading & configuring the in-memory web api
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api/in-memory-web-api.module';
 import { InMemoryDataService }  from './in-memory-data.service';
+import { HeroSearchComponent } from './hero-search/hero-search.component';
+
+import './rxjs-extensions';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     HeroDetailComponent,
-    HeroesComponent
+    HeroesComponent,
+    HeroSearchComponent
   ],
   imports: [
     BrowserModule,
